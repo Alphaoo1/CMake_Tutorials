@@ -1,0 +1,216 @@
+message("This is a tutorial file to understand cmake scripting")
+message("It can found at the following website")
+message(https://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes/)
+message(" ")
+message(" ")
+message("This is how message() works in cmake")
+message(message With out Quotes)
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+# use 
+# cmake -P hello.txt
+
+message("Hello world!")    		#A message to print
+message(" ")
+message(" ")
+
+# ------------------------------------------------------------
+# In camke every variable is a string 
+# variable define inside ${}
+# use 
+# cmake -DNAME=Newman -P hello.txt
+
+message("Hello ${NAME}")
+message(" - ")
+message(" - ")
+
+# ------------------------------------------------------------
+# define a varialble in the script
+set(THING "funk") # the name of the variable to assign
+message("We want the ${THING}!") # its value
+
+# set("THING" funk) also ok except for if and while
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+# Data structure
+
+set(JOHN_NAME "John Smith")
+set(JOHN_ADDRESS "123 Fake St")
+set(PERSON "JOHN")
+message("${${PERSON}_NAME} lives at ${${PERSON}_ADDRESS}.")
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+# Math
+# The first argument must be EXPR
+
+math(EXPR MY_SUM "1 + 1")                   # Evaluate 1 + 1; store result in MY_SUM
+message("The sum is ${MY_SUM}.")
+math(EXPR DOUBLE_SUM "${MY_SUM} * 2")       # Multiply by 2; store result in DOUBLE_SUM
+message("Double that is ${DOUBLE_SUM}.")
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+if(WIN32)
+    message("You're running CMake on Windows.")
+endif()
+
+
+set(A "1")
+set(B "1")
+while(A LESS "1000000")
+    message("${A}")                 # Print A
+    math(EXPR T "${A} + ${B}")      # Add the numeric values of A and B; store result in T
+    set(A "${B}")                   # Assign the value of B to A
+    set(B "${T}")                   # Assign the value of T to B
+endwhile()
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+set(ARGS "EXPR;T;1 + 1")
+math(${ARGS})                                   # Equivalent to calling math(EXPR T "1 + 1")
+message("${T}")
+
+message("${ARGS}")
+
+message(" Using message("${T}") will give value of variable T")
+message(" Using message(T) will just print out T")
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+set(MY_LIST These are separate arguments)
+message("${MY_LIST}")                           # Prints: These;are;separate;arguments
+
+list(REMOVE_ITEM MY_LIST "separate")            # Removes "separate" from the list
+message("${MY_LIST}")                           # Prints: These;are;arguments
+
+
+message(" ")
+message(" ")
+
+foreach(ARG These are separate arguments)
+    message("${ARG}")                           # Prints each word on a separate line
+endforeach()
+
+message(" ")
+message(" ")
+
+foreach(ARG ${MY_LIST})                         # Splits the list; passes items as arguments
+    message("${ARG}")                           # Prints each item on a separate line
+endforeach()
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+function(doubleIt Value)                        # Declare the function
+    math(EXPR RESULT "${Value} * 2")            # Do the math
+    message("${RESULT}")                        # Print results
+endfunction()
+
+doubleIt("4")                                   # call the function
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+function(doubleIt VARNAME VALUE)
+    math(EXPR RESULT "${VALUE} * 2")
+    set(${VARNAME} "${RESULT}" PARENT_SCOPE)    # Set the named variable in caller's scope
+endfunction()
+
+doubleIt(RESULT "4")                    # Tell the function to set the variable named RESULT
+message("${RESULT}")                    # Prints: 8
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+macro(doubleIt VARNAME VALUE)
+    math(EXPR ${VARNAME} "${VALUE} * 2")        # Set the named variable in caller's scope
+endmacro()
+
+doubleIt(RESULT "4")                    # Tell the macro to set the variable named RESULT
+message("${RESULT}")                    # Prints: 8
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+function(doubleEach)
+    foreach(ARG ${ARGN})                # Iterate over each argument
+        math(EXPR N "${ARG} * 2")       # Double ARG's numeric value; store result in N
+        message("${N}")                 # Print N
+    endforeach()
+endfunction()
+
+doubleEach(5 6 7 8)                     # Prints 10, 12, 14, 16 on separate lines
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+
+
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+
+
+
+
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+
+
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
+
+
+
+
+
+message(" ")
+message(" ")
+# ------------------------------------------------------------
