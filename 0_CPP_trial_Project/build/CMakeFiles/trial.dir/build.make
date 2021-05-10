@@ -116,6 +116,7 @@ trial_EXTERNAL_OBJECTS =
 trial: CMakeFiles/trial.dir/main.cpp.o
 trial: CMakeFiles/trial.dir/myClasses/myClass.cpp.o
 trial: CMakeFiles/trial.dir/build.make
+trial: myFunctions/libFunctions_Lib.a
 trial: CMakeFiles/trial.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable trial"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trial.dir/link.txt --verbose=$(VERBOSE)

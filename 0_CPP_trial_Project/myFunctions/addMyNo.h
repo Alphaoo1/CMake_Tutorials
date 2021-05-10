@@ -1,13 +1,11 @@
 #ifndef ADDMYNO_H
 #define ADDMYNO_H
 
-int addMyNo(int a, int b)
+class adder
 {
-    // This function adds two number
-    int sum;
-    sum = a + b;
-    return sum;
-}
+public:
+    int addMyNo(int a, int b);
+};
 
 
 #endif

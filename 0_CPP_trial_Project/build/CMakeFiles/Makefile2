@@ -959,10 +959,10 @@ clean: CMakeFiles/NightlyMemCheck.dir/clean
 # Target rules for target CMakeFiles/trial.dir
 
 # All Build rule for target.
-CMakeFiles/trial.dir/all:
+CMakeFiles/trial.dir/all: myFunctions/CMakeFiles/Functions_Lib.dir/all
 	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/depend
 	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles --progress-num=1,2,3 "Built target trial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles --progress-num=4,5,6 "Built target trial"
 .PHONY : CMakeFiles/trial.dir/all
 
 # Include target in all.
@@ -972,7 +972,7 @@ all: CMakeFiles/trial.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/trial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/trial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/trial.dir/rule
@@ -989,6 +989,61 @@ CMakeFiles/trial.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/trial.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory myFunctions
+
+# Convenience name for "all" pass in the directory.
+myFunctions/all: myFunctions/CMakeFiles/Functions_Lib.dir/all
+
+.PHONY : myFunctions/all
+
+# Convenience name for "clean" pass in the directory.
+myFunctions/clean: myFunctions/CMakeFiles/Functions_Lib.dir/clean
+
+.PHONY : myFunctions/clean
+
+# Convenience name for "preinstall" pass in the directory.
+myFunctions/preinstall:
+
+.PHONY : myFunctions/preinstall
+
+#=============================================================================
+# Target rules for target myFunctions/CMakeFiles/Functions_Lib.dir
+
+# All Build rule for target.
+myFunctions/CMakeFiles/Functions_Lib.dir/all:
+	$(MAKE) -f myFunctions/CMakeFiles/Functions_Lib.dir/build.make myFunctions/CMakeFiles/Functions_Lib.dir/depend
+	$(MAKE) -f myFunctions/CMakeFiles/Functions_Lib.dir/build.make myFunctions/CMakeFiles/Functions_Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles --progress-num=1,2,3 "Built target Functions_Lib"
+.PHONY : myFunctions/CMakeFiles/Functions_Lib.dir/all
+
+# Include target in all.
+all: myFunctions/CMakeFiles/Functions_Lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+myFunctions/CMakeFiles/Functions_Lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 myFunctions/CMakeFiles/Functions_Lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 0
+.PHONY : myFunctions/CMakeFiles/Functions_Lib.dir/rule
+
+# Convenience name for target.
+Functions_Lib: myFunctions/CMakeFiles/Functions_Lib.dir/rule
+
+.PHONY : Functions_Lib
+
+# clean rule for target.
+myFunctions/CMakeFiles/Functions_Lib.dir/clean:
+	$(MAKE) -f myFunctions/CMakeFiles/Functions_Lib.dir/build.make myFunctions/CMakeFiles/Functions_Lib.dir/clean
+.PHONY : myFunctions/CMakeFiles/Functions_Lib.dir/clean
+
+# clean rule for target.
+clean: myFunctions/CMakeFiles/Functions_Lib.dir/clean
 
 .PHONY : clean
 

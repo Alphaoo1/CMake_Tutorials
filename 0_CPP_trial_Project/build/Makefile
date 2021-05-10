@@ -498,6 +498,19 @@ trial/fast:
 	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/build
 .PHONY : trial/fast
 
+#=============================================================================
+# Target rules for targets named Functions_Lib
+
+# Build rule for target.
+Functions_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Functions_Lib
+.PHONY : Functions_Lib
+
+# fast build rule for target.
+Functions_Lib/fast:
+	$(MAKE) -f myFunctions/CMakeFiles/Functions_Lib.dir/build.make myFunctions/CMakeFiles/Functions_Lib.dir/build
+.PHONY : Functions_Lib/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -590,6 +603,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... NightlyMemCheck"
 	@echo "... trial"
+	@echo "... Functions_Lib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

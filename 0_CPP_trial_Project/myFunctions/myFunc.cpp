@@ -1,6 +1,7 @@
+#include <iostream>
 #include "myFunc.h"
 
-myFunc()
+void myFuncClass::myFunc()
 {
     // This is test function
     // It will print a message when used

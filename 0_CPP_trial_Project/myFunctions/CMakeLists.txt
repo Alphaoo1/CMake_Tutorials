@@ -4,11 +4,11 @@
 # CMake requirements
 ####################################
 
-cmake_minimum_required(VERSION 2.8)
-project(trial LANGUAGES CXX DESCRIPTION "Trial projects")
+#cmake_minimum_required(VERSION 2.8)
+#project(Functions_Lib LANGUAGES CXX DESCRIPTION "Functions Library to be used as support functions")
 
-enable_testing()
-include(CTest)
+#enable_testing()
+#include(CTest)
 
 #############################################################
 ### Find requirements
@@ -18,29 +18,19 @@ include(CTest)
 #############################################################
 ### Include dir and files
 #############################################################
-include_directories(myClasses myFunctions include)
+set(my_sub_includes
+    "myFunc.h"
+    "addMyNo.h")
 
-set(my_includes
-    "include/myInclude.h"
-    "include/class_protected_member.h"
-    "myFunctions/myFunc.h"
-    "myFunctions/addMyNo.h"
-    )
+set(my_sub_cpps
+    "myFunc.cpp"
+    "addMyNo.cpp")
 
-set(my_cpps
-    main.cpp
-    "myClasses/myClass.cpp")
-
-
-add_subdirectory(myFunctions)
 #############################################################
 ### Build Project
 #############################################################
-add_executable(${PROJECT_NAME} ${my_includes} ${my_cpps})
-
-# Link the dependent library
-target_link_libraries(${PROJECT_NAME} Functions_Lib)
-
+add_library(Functions_Lib ${my_sub_includes} ${my_sub_cpps})
+#add_library(Functions_Lib addMyNo.cpp)
 
 #############################################################
 ### Define tests
