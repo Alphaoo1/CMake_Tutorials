@@ -1,8 +1,7 @@
 #include <iostream> // std::cout
 #include "myFunc.h"
 #include "myClass.h"
-
-#include <myClass.h>
+#include "addMyNo.h"
 
 int main() {
     std::cout << "Hello from Alpha001!" << std::endl;
@@ -18,6 +17,10 @@ int main() {
 
     myClass createObj;
     createObj.printMyMSG();
+
+
+    int printMySum( addMyNo(createObj.var1, createObj.var2));
+    std::cout << "The sum of the addition of two variable is = " << printMySum << std::endl;
 
     return 0;
 }
