@@ -1,20 +1,3 @@
-# CMakeLists.txt
-
-####################################
-# CMake requirements
-####################################
-
-#cmake_minimum_required(VERSION 2.8)
-#project(Functions_Lib LANGUAGES CXX DESCRIPTION "Functions Library to be used as support functions")
-
-#enable_testing()
-#include(CTest)
-
-#############################################################
-### Find requirements
-#############################################################
-
-
 #############################################################
 ### Include dir and files
 #############################################################
