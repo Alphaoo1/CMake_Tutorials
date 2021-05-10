@@ -19,8 +19,16 @@ include(CTest)
 ### Include dir and files
 #############################################################
 include_directories(myClasses myFunctions include)
-set(my_includes "include/myInclude.h" "./myFunctions/myFunc.h")
-set(my_cpps main.cpp "myClasses/myClass.cpp")
+
+set(my_includes
+    "include/myInclude.h"
+    "include/class_protected_member.h"
+    "myFunctions/myFunc.h"
+    "myFunctions/addMyNo.h")
+
+set(my_cpps
+    main.cpp
+    "myClasses/myClass.cpp")
 
 #############################################################
 ### Build Project
