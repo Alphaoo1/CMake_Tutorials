@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myClasses -I/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myFunctions -I/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/include 
 

@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
+../include/myInclude.h
+iostream
+-
+
+../myClasses/myClass.h
+
+../myFunctions/myFunc.h
+
 /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/main.cpp
 iostream
 -
+myFunc.h
+/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myFunc.h
+myClass.h
+/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myClass.h
+myClass.h
+-
+myInclude.h
+/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myInclude.h
+
+/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myClasses/myClass.cpp
+iostream
+-
+myClass.h
+/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myClasses/myClass.h
+
+/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/myClasses/myClass.h
 

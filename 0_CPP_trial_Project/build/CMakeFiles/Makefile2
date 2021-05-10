@@ -962,7 +962,7 @@ clean: CMakeFiles/NightlyMemCheck.dir/clean
 CMakeFiles/trial.dir/all:
 	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/depend
 	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles --progress-num=1,2 "Built target trial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles --progress-num=1,2,3 "Built target trial"
 .PHONY : CMakeFiles/trial.dir/all
 
 # Include target in all.
@@ -972,7 +972,7 @@ all: CMakeFiles/trial.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/trial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/trial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/prasad/01_PhD/3_Tutorials/cmake_tutorial/CMake_Tutorials/0_CPP_trial_Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/trial.dir/rule

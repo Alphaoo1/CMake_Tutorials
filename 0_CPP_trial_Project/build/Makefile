@@ -525,6 +525,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+myClasses/myClass.o: myClasses/myClass.cpp.o
+
+.PHONY : myClasses/myClass.o
+
+# target to build an object file
+myClasses/myClass.cpp.o:
+	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/myClasses/myClass.cpp.o
+.PHONY : myClasses/myClass.cpp.o
+
+myClasses/myClass.i: myClasses/myClass.cpp.i
+
+.PHONY : myClasses/myClass.i
+
+# target to preprocess a source file
+myClasses/myClass.cpp.i:
+	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/myClasses/myClass.cpp.i
+.PHONY : myClasses/myClass.cpp.i
+
+myClasses/myClass.s: myClasses/myClass.cpp.s
+
+.PHONY : myClasses/myClass.s
+
+# target to generate assembly for a file
+myClasses/myClass.cpp.s:
+	$(MAKE) -f CMakeFiles/trial.dir/build.make CMakeFiles/trial.dir/myClasses/myClass.cpp.s
+.PHONY : myClasses/myClass.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -566,6 +593,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... myClasses/myClass.o"
+	@echo "... myClasses/myClass.i"
+	@echo "... myClasses/myClass.s"
 .PHONY : help
 
 
