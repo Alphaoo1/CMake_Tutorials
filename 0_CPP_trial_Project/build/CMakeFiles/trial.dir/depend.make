@@ -3,6 +3,7 @@
 
 CMakeFiles/trial.dir/main.cpp.o: ../include/myInclude.h
 CMakeFiles/trial.dir/main.cpp.o: ../myClasses/myClass.h
+CMakeFiles/trial.dir/main.cpp.o: ../myFunctions/addMyNo.h
 CMakeFiles/trial.dir/main.cpp.o: ../myFunctions/myFunc.h
 CMakeFiles/trial.dir/main.cpp.o: ../main.cpp
 
