@@ -6,9 +6,9 @@ class myClass
     // This is a test class
     // here we declare it's members
 
-protected:
-    int var1;
-    int var2;
+//protected:
+//    int var1;
+//    int var2;
 
 public:
     void printMyMSG();

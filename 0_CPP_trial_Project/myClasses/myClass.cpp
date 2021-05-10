@@ -1,7 +1,7 @@
 #include <iostream>
 #include "myClass.h"
 
-myClass::printMyMSG()
+void myClass::printMyMSG()
 {
     // Here we define the member fucntion of myClass
     std::cout << "\033[34;1m >>> myClass::printMyMSG() called \033[0m" <<  std::endl;
