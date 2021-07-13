@@ -2,19 +2,15 @@
 ### Include dir and files
 #############################################################
 set(my_sub_includes
-    "myFunc.h"
-    "addMyNo.h")
+    "Case_switches.h"
+    "Source_Term_Switch.h")
 
 set(my_sub_cpps
-    "myFunc.cpp"
-    "addMyNo.cpp")
+    "Case_switches.cpp"
+    "Source_Term_Switch.cpp")
 
 #############################################################
 ### Build Project
 #############################################################
-add_library(Functions_Lib ${my_sub_includes} ${my_sub_cpps})
-#add_library(Functions_Lib addMyNo.cpp)
+add_library(Helper_Functions_Lib ${my_sub_includes} ${my_sub_cpps})
 
-#############################################################
-### Define tests
-#############################################################
