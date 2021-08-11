@@ -1,5 +1,5 @@
 # CMake_Tutorials
-This repo comtains how to use cmake to build a cpp project
+This repo contains how to use cmake to build a cpp project
 
 
 ## Refer the following for tutorials
